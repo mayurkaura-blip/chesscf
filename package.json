@@ -1,0 +1,21 @@
+{
+  "name": "chesscf",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5174 --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --port 5175 --host 0.0.0.0"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.0.0",
+    "chess.js": "^1.4.0",
+    "react-chessboard": "^5.12.1"
+  },
+  "devDependencies": {
+    "vite": "^8.0.0",
+    "@vitejs/plugin-react": "^6.0.0"
+  }
+}
