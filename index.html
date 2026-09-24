@@ -5,20 +5,20 @@
   <link rel="icon" href="/favicon.svg"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"/>
   <meta name="theme-color" content="#FF6A00"/>
-  <meta name="description" content="Play chess vs 5 AI agents that self-improve, voice chat — chess.mayurdemo.xyz"/>
+  <meta name="description" content="ChessCF — chess.mayurdemo.xyz"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <link rel="manifest" href="/manifest.json"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
-  <!-- React from CDN — reduces bundle by ~140KB -->
-  <script crossorigin src="https://cdn.jsdelivr.net/npm/react@19.1.0/umd/react.production.min.js"></script>
-  <script crossorigin src="https://cdn.jsdelivr.net/npm/react-dom@19.1.0/umd/react-dom.production.min.js"></script>
+  <!-- All deps from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js" crossorigin></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin></script>
   <script>window.ReactJSXRuntime = React;</script>
+  <script src="https://cdn.jsdelivr.net/npm/react-router-dom@6.28.0/dist/umd/react-router-dom.production.min.js" crossorigin></script>
   <title>ChessCF — chess.mayurdemo.xyz</title>
 </head>
 <body>
   <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+  <script type="module" src="/assets/index.js"></script>
 </body>
 </html>
