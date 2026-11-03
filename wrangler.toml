@@ -1,7 +1,7 @@
 name = "chesscf"
+pages_build_output_dir = "./dist"
 compatibility_date = "2025-09-01"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = "./dist"
 
 [[d1_databases]]
 binding = "DB"
@@ -16,44 +16,9 @@ id = "fcead4081ec44a7299b31f8e5243163d"
 binding = "ASSETS_R2"
 bucket_name = "chesscf-assets"
 
-[[durable_objects.bindings]]
-name = "GAME_ROOM"
-class_name = "GameRoomDO"
-script_name = "chesscf"
-
-[[durable_objects.bindings]]
-name = "AGENT_DO"
-class_name = "AgentMemoryDO"
-script_name = "chesscf"
-
-[[durable_objects.bindings]]
-name = "LEADERBOARD_DO"
-class_name = "LeaderboardDO"
-script_name = "chesscf"
-
-[[durable_objects.bindings]]
-name = "CHAT_ROOM"
-class_name = "ChatRoomDO"
-script_name = "chesscf"
-
-[[durable_objects.bindings]]
-name = "PRESENCE_DO"
-class_name = "PresenceDO"
-script_name = "chesscf"
-
-[[migrations]]
-tag = "v1"
-new_sqlite_classes = ["GameRoomDO","AgentMemoryDO","LeaderboardDO","ChatRoomDO","PresenceDO"]
-
 [[queues.producers]]
 binding = "ANALYSIS_QUEUE"
 queue = "chesscf-analysis"
-
-[[queues.consumers]]
-queue = "chesscf-analysis"
-max_batch_size = 10
-max_batch_timeout = 30
-max_retries = 3
 
 [vars]
 ENVIRONMENT = "production"
